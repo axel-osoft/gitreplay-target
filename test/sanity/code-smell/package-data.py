@@ -188,10 +188,9 @@ def create_sdist(tmp_dir):
     )
 
     stderr = create.stderr
-    stdout = create.stdout
 
     if create.returncode != 0:
-        raise Exception('make snapshot failed:\n%s' % stderr + '\n' + stdout)
+        raise Exception('make snapshot failed:\n%s' % stderr)
 
     # Determine path to sdist
     tmp_dir_files = os.listdir(tmp_dir)

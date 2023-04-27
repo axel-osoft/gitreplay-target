@@ -148,7 +148,6 @@ bootstrap_remote_freebsd()
     packages="
         python${python_package_version}
         py${python_package_version}-sqlite3
-        py${python_package_version}-setuptools
         bash
         curl
         gtar
